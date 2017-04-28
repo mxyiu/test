@@ -85,7 +85,7 @@ git status
 - 当文件修改，且已经add到暂存区后，可以用以下命令修改。
 
   ```git
-  //
+  //重置暂存区，文件保持最后的保存状态
   git reset HEAD <file>
   //撤销修改
   git checkout -- <file>
