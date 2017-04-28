@@ -76,7 +76,7 @@ git clone https://github.com/example/repo
 git status
 ```
 
-- 当文件修改，没有add到暂存区的时候，可以用以下命令撤销修改。
+- 当文件修改，没有add到暂存区的时候，可以用以下命令撤销修改，即变回上次提交时的样子。
 
   ```git
   git checkout -- <file>
@@ -87,7 +87,7 @@ git status
   ```git
   //
   git reset HEAD <file>
-  //
+  //撤销修改
   git checkout -- <file>
   ```
 
