@@ -17,7 +17,7 @@ git config --global user.name "your name"
 git config --global user.email "your email address"
 ```
 
-**注意**：
+**注意：**
 
 - 当使用了`--global`这个参数，你的电脑上所有的repository都会使用这个配置，支持对某个repository指定不同的user name和user email。
 - 如果想验证是否配置成功，则把name和email去掉在输入一次命令，看显示的用户名和邮箱是否正确。
@@ -70,9 +70,26 @@ git clone https://github.com/example/repo
 
 如果想要查看当前状态，则可以通过以下命令来查看，它会告诉你相应的状态。
 
+**注意：** 标红表示文件未add到暂存区，标绿表示文件已经add到了暂存区。
+
 ```git
 git status
 ```
+
+- 当文件修改，没有add到暂存区的时候，可以用以下命令撤销修改。
+
+  ```git
+  git checkout -- <file>
+  ```
+
+- 当文件修改，且已经add到暂存区后，可以用以下命令修改。
+
+  ```git
+  //
+  git reset HEAD <file>
+  //
+  git checkout -- <file>
+  ```
 
 如果你不记得修改过什么了，通过一下命令可以查看不同之处，可以知道做了什么修改。
 
