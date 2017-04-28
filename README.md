@@ -62,13 +62,13 @@ git init
 git clone https://github.com/example/repo
 ```
 
-查看当前状态。
+如果想要查看当前状态，则可以通过以下命令来查看，它会告诉你相应的状态。
 
 ```git
 git status
 ```
 
-查看不同。
+如果你不记得修改过什么了，通过一下命令可以查看不同之处，可以知道做了什么修改。
 
 ```git
 git diff
